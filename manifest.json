@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome on device Miko chat sample",
+  "version": "0.0.1",
+  "description": "Chrome on device Miko chat sample: Chrome Built-in AI Prompt API のサンプル拡張機能",
+  "permissions": ["storage", "tts"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Chrome on device Miko chat sample"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none';"
+  }
+}

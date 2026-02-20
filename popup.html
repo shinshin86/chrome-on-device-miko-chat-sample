@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome on device Miko chat sample</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header id="header">
+    <h1>Chrome on device Miko chat sample</h1>
+    <div id="status" role="status" aria-live="polite">確認中…</div>
+  </header>
+
+  <!-- アバターパネル -->
+  <section id="avatar-panel" aria-label="AIアバター">
+    <div id="avatar-sprites"></div>
+    <button id="tts-toggle" aria-label="音声の切り替え">🔊</button>
+  </section>
+
+  <!-- チャット表示領域 -->
+  <main id="chat-container" aria-label="チャット履歴">
+    <div id="messages"></div>
+  </main>
+
+  <!-- エラー表示 -->
+  <div id="error-toast" role="alert" aria-live="assertive" hidden></div>
+
+  <!-- 入力エリア -->
+  <footer id="input-area">
+    <div id="char-count" aria-live="polite"></div>
+    <div id="input-row">
+      <textarea
+        id="user-input"
+        placeholder="メッセージを入力（Enter で送信、Shift+Enter で改行）"
+        rows="2"
+        maxlength="4000"
+        aria-label="メッセージ入力"
+      ></textarea>
+      <button id="send-btn" aria-label="送信" disabled>送信</button>
+    </div>
+    <button id="reset-btn" aria-label="会話をリセット">リセット</button>
+  </footer>
+
+  <script src="avatar.js"></script>
+  <script src="tts.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
