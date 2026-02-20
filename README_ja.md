@@ -1,5 +1,7 @@
 # Chrome on device Miko chat sample — Chrome 拡張機能
 
+![Demo](./images/demo.png)
+
 [Prompt API（Built-in AI / Gemini Nano）](https://developer.chrome.com/docs/ai/built-in)を使った、完全オンデバイスで動作するチャット Chrome 拡張機能です。外部サーバー不要、APIキー不要 — すべてブラウザ内で完結します。
 
 > **[English README](./README.md)**

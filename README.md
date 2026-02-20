@@ -1,5 +1,7 @@
 # Chrome on device Miko chat sample — Chrome Extension
 
+![Demo](./images/demo.png)
+
 A Chrome extension that provides a fully on-device chat experience using the [Prompt API (Built-in AI / Gemini Nano)](https://developer.chrome.com/docs/ai/built-in). No external servers, no API keys — everything runs locally in your browser.
 
 > **[日本語版 README はこちら](./README_ja.md)**
